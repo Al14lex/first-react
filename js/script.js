@@ -176,4 +176,38 @@
 зображення
 нумерований список в якому вводяться данні з масиву (якщо вони є)
 кнопка, при кліку на яку з"являється повідомлення (alert)
-*/ 
+*/
+
+//==========================ДЗ===================
+
+const rootElement = document.getElementById('root');
+//дані
+let hWorkArr = ["масиви", "умови", "інтеграція подій", "стилізація"];
+function clickBtn() {
+    alert ("і навіть кнопка працює!!");
+}
+let styleDiv = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "12px"
+};
+
+let homeWork = (
+    <div style={styleDiv}>
+        <img src="../img/1 (2).png" alt="react" width="100px" height="100px"/>
+        <h1>ДЗ React</h1>
+        <p>Моє перше домашнє завдання по темі React. <br/> Я вивчила:</p>
+        <ol>
+            {hWorkArr.map((item, index) => (
+                <li key={index}>{item}</li>
+            ))  
+            }
+        </ol>
+        <button onClick={clickBtn} type="button">Кнопка</button>
+    </div>
+)
+
+ReactDOM.render(homeWork, rootElement);
+// ВСЕ ПРАЦЮЄ! Я АГОНЬ
+//============================================================

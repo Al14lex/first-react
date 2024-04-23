@@ -10,11 +10,12 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-ul,
+/* ul,
 ol,
 li {
 	list-style: none;
-}
+} */
+
 img {
 	vertical-align: top;
 }
@@ -26,11 +27,13 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
+	margin: 15px;
+	text-align: center;
 }
 html,
 body {
 	height: 100%;
-	line-height: 1;
+	line-height: 1,7;
 }
 textarea,
 button,
@@ -42,5 +45,11 @@ input {
 }
 button {
 	cursor: pointer;
-	background-color: inherit;
+	background-color:grey;
+	margin: 20px;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+img{
+
 }
